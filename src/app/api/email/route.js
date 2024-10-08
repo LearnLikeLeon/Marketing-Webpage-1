@@ -15,11 +15,9 @@ export async function POST(request, response) {
       message: body.message,
     });
 
-    //  Final email : thedatafoundation@gmail.com
-
     const { data, error } = await emailNotification.emails.send({
       from: "Forms <form@esanalysis.com>",
-      to: ["teamdevusa@gmail.com"],
+      to: ["thedatafoundation@gmail.com"],
       subject: "New contact form received",
       react: emailContent,
     });
