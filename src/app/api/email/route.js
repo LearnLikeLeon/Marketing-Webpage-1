@@ -1,10 +1,18 @@
 import { Email } from "../email/Email";
-import { Resend } from "resend";
+// import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+// import connectResend from "../../lib/emailConnection";
+
+import { getApiKey } from "../../lib/emailConnection";
+
+// const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
+// console.log("resend : ", resend);
 
 export async function POST(request, response) {
+  const resend = getApiKey();
+  // console.log(" resend api key is : ", resend);
+
   try {
     const body = await request.json();
     console.log("body", body);
@@ -16,6 +24,7 @@ export async function POST(request, response) {
     });
 
     //  Final email : thedatafoundation@gmail.com
+    // resend
     const { data, error } = await resend.emails.send({
       from: "Forms <form@esanalysis.com>",
       to: ["teamdevusa@gmail.com"],
