@@ -1,17 +1,9 @@
 import { Email } from "../email/Email";
-// import { Resend } from "resend";
 import { NextResponse } from "next/server";
-
-// import connectResend from "../../lib/emailConnection";
-
 import { getApiKey } from "../../lib/emailConnection";
 
-// const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
-// console.log("resend : ", resend);
-
 export async function POST(request, response) {
-  const resend = getApiKey();
-  // console.log(" resend api key is : ", resend);
+  const emailNotification = getApiKey();
 
   try {
     const body = await request.json();
@@ -24,8 +16,8 @@ export async function POST(request, response) {
     });
 
     //  Final email : thedatafoundation@gmail.com
-    // resend
-    const { data, error } = await resend.emails.send({
+
+    const { data, error } = await emailNotification.emails.send({
       from: "Forms <form@esanalysis.com>",
       to: ["teamdevusa@gmail.com"],
       subject: "New contact form received",
