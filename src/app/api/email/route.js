@@ -7,7 +7,6 @@ export async function POST(request, response) {
 
   try {
     const body = await request.json();
-    console.log("body", body);
 
     const emailContent = Email({
       fullname: body.fullname,
@@ -18,7 +17,7 @@ export async function POST(request, response) {
     const { data, error } = await emailNotification.emails.send({
       from: "Forms <form@esanalysis.com>",
       to: ["thedatafoundation@gmail.com"],
-      subject: "New contact form received",
+      subject: "Contact form submission",
       react: emailContent,
     });
 
