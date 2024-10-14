@@ -9,7 +9,7 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-export const Email = ({ fullname, email, message }) => {
+export const Email = ({ fullname, email, service, training, message }) => {
   return (
     <Html>
       <Body>
@@ -36,19 +36,49 @@ export const Email = ({ fullname, email, message }) => {
               </p>
               <ul className="flex flex-col space-y-4">
                 <li>
-                  Prospective client:{"  "} {fullname}
+                  <strong>
+                    {" "}
+                    <i> Prospective client : </i>{" "}
+                  </strong>
+                  {"  "} {fullname}
                 </li>
+                <br></br>
                 <li>
-                  Email:
+                  <strong>
+                    {" "}
+                    <i> Email : </i>{" "}
+                  </strong>
                   <a className="font-medium" href={`mailto:${email}`}>
                     {"  "}
                     {email}
                   </a>
                   {"  "}
                 </li>
+                <br></br>
                 <li>
-                  Message:{"  "} {message}
+                  <strong>
+                    {" "}
+                    <i> Selected service : </i>{" "}
+                  </strong>{" "}
+                  {"  "} {service}
                 </li>
+                <br></br>
+                <li>
+                  <strong>
+                    {" "}
+                    <i> Selected training : </i>{" "}
+                  </strong>{" "}
+                  {"  "} {training}
+                </li>
+                <br></br>
+                <li>
+                  <strong>
+                    {" "}
+                    <i> Message : </i>{" "}
+                  </strong>{" "}
+                  {"  "} {message}
+                </li>
+                <br></br>
               </ul>
 
               <Button
@@ -60,7 +90,7 @@ export const Email = ({ fullname, email, message }) => {
                   borderRadius: "5px",
                 }}
               >
-                Reply to this email
+                Reply to this contact
               </Button>
 
               <p>

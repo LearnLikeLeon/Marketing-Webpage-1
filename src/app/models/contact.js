@@ -15,6 +15,16 @@ const contactSchema = new Schema({
     match: [/^[\w.%+-]+@[\w.-]+\.[A-Za-z]{2,}$/i, "Invalid email address"],
   },
 
+  service: {
+    type: String,
+    required: [true, "Service is required."],
+  },
+
+  training: {
+    type: String,
+    required: [true, "Training is required."],
+  },
+
   message: {
     type: String,
     required: [true, "Message is required."],

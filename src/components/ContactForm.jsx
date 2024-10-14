@@ -5,6 +5,8 @@ import { useState } from "react";
 export default function ContactForm() {
   const [fullname, setFullname] = useState("");
   const [email, setEmail] = useState("");
+  const [service, setService] = useState("");
+  const [training, setTraining] = useState("");
   const [message, setMessage] = useState("");
   const [error, setError] = useState([]);
   const [success, setSuccess] = useState(false);
@@ -25,6 +27,8 @@ export default function ContactForm() {
       body: JSON.stringify({
         fullname,
         email,
+        service,
+        training,
         message,
       }),
     });
@@ -37,6 +41,8 @@ export default function ContactForm() {
       body: JSON.stringify({
         fullname,
         email,
+        service,
+        training,
         message,
       }),
     });
@@ -48,6 +54,8 @@ export default function ContactForm() {
     if (success) {
       setFullname("");
       setEmail("");
+      setService("");
+      setTraining("");
       setMessage("");
     }
   };
@@ -71,35 +79,105 @@ export default function ContactForm() {
         className="py-4 mt-4 border-t flex flex-col gap-5"
       >
         <div>
-          <label htmlFor="fullname">Full Name</label>
+          <label
+            htmlFor="fullname"
+            className="block text-sm font-semibold leading-6 text-gray-900"
+          >
+            Full Name
+          </label>
           <input
             onChange={(e) => setFullname(e.target.value)}
             value={fullname}
             type="text"
             id="fullname"
             placeholder="Dr. Edwige"
+            className="block w-full h-11 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
         </div>
 
         <div>
-          <label htmlFor="email">Email</label>
+          <label
+            htmlFor="email"
+            className="block text-sm font-semibold leading-6 text-gray-900"
+          >
+            Email
+          </label>
           <input
             onChange={(e) => setEmail(e.target.value)}
             value={email}
             type="text"
             id="email"
             placeholder="edwige@email.com"
+            className="block w-full h-11 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           />
         </div>
 
         <div>
-          <label htmlFor="message">Your Message</label>
+          <label
+            htmlFor="service"
+            className="block text-sm font-semibold leading-6 text-gray-900"
+          >
+            Select your service:
+          </label>
+          <select
+            id="service"
+            value={service}
+            onChange={(e) => setService(e.target.value)}
+            required
+            className="block w-full h-11 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+          >
+            <option value="" disabled>
+              Select a service
+            </option>
+            <option value="consulting">Consulting</option>
+            <option value="development">Development</option>
+            <option value="design">Design</option>
+            <option value="marketing">Marketing</option>
+          </select>
+        </div>
+
+        <div>
+          <label
+            htmlFor="training"
+            className="block text-sm font-semibold leading-6 text-gray-900"
+          >
+            Select your training:
+          </label>
+          <select
+            id="training"
+            value={training}
+            onChange={(e) => setTraining(e.target.value)}
+            className="block w-full h-11 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+            required
+          >
+            <option value="" disabled>
+              Select a training
+            </option>
+            <option value="Research Methodology for PhD students">
+              Research Methodology for PhD students{" "}
+            </option>
+            <option value="Data Analysis">Data Analysis</option>
+            <option value="Cloud Computing Foundation">
+              Cloud Computing Foundation
+            </option>
+            <option value="Linux Foundation">Linux Foundation</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div>
+          <label
+            htmlFor="message"
+            className="block text-sm font-semibold leading-6 text-gray-900"
+          >
+            Your Message
+          </label>
           <textarea
             onChange={(e) => setMessage(e.target.value)}
             value={message}
-            className="h-32"
             id="message"
             placeholder="Type your message here..."
+            className="block w-full h-32 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
           ></textarea>
         </div>
 

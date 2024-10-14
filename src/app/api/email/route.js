@@ -11,6 +11,8 @@ export async function POST(request, response) {
     const emailContent = Email({
       fullname: body.fullname,
       email: body.email,
+      service: body.service,
+      training: body.training,
       message: body.message,
     });
 
