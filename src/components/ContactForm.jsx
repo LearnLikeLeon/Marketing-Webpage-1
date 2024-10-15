@@ -129,10 +129,20 @@ export default function ContactForm() {
             <option value="" disabled>
               Select a service
             </option>
-            <option value="consulting">Consulting</option>
-            <option value="development">Development</option>
-            <option value="design">Design</option>
-            <option value="marketing">Marketing</option>
+            <option value="Research and Consulting">
+              Research and Consulting
+            </option>
+            <option value="Data Analysis">Data Analysis</option>
+            <option value="Training">Training</option>
+            <option value="Website Development">Website Development</option>
+            <option value="Portfolio Building "> Portfolio Building</option>
+            <option value=" Mentorship and Coaching">
+              {" "}
+              Mentorship and Coaching
+            </option>
+            <option value="Teaching ">Teaching </option>
+            <option value="Tutoring "> Tutoring</option>
+            <option value="Collaboration ">Collaboration </option>
           </select>
         </div>
 
@@ -153,15 +163,16 @@ export default function ContactForm() {
             <option value="" disabled>
               Select a training
             </option>
-            <option value="Research Methodology for PhD students">
-              Research Methodology for PhD students{" "}
+            <option value="Research and Methodology">
+              Research and Methodology{" "}
             </option>
             <option value="Data Analysis">Data Analysis</option>
-            <option value="Cloud Computing Foundation">
-              Cloud Computing Foundation
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Professional Development">
+              Professional Development
             </option>
-            <option value="Linux Foundation">Linux Foundation</option>
-            <option value="Other">Other</option>
+            <option value="Workshops">Workshops</option>
+            <option value="Other">Others</option>
           </select>
         </div>
 
