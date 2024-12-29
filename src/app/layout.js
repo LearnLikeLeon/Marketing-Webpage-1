@@ -14,7 +14,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "ES Analysis",
-  description: "Research Analyst / Data Analyst / Analytics Consultant",
+  description: "Data Analyst / Research Analyst / Analytics Consultant",
   message:
     " Collect, process, analyse and present data from supporting every day business decisions to fueling global change. ",
 };
