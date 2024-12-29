@@ -8,17 +8,17 @@ import {
 } from "react-icons/rx";
 
 export const ServiceData = [
-  {
-    icon: RxLaptop,
-    title: "Academic Research",
-    content:
-      "ES Analysis provides research and development. A team of experts is dedicated to helping you with the literature review, managing your project, and completing your dissertation with ease.",
-    link: " https://www.researchgate.net/profile/Edwige-Feulefack-Songong-2 ",
-    image:
-      "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Dr+Edwige_Services/academic+research.png",
-    // backgroundImage:
-    //   "url('https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Dr+Edwige_Logos/Data_Portfolio_Logo_3.jpg')",
-  },
+  // {
+  //   icon: RxLaptop,
+  //   title: "Academic Research",
+  //   content:
+  //     "ES Analysis provides research and development. A team of experts is dedicated to helping you with the literature review, managing your project, and completing your dissertation with ease.",
+  //   link: " https://www.researchgate.net/profile/Edwige-Feulefack-Songong-2 ",
+  //   image:
+  //     "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Dr+Edwige_Services/academic+research.png",
+  //   // backgroundImage:
+  //   //   "url('https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Dr+Edwige_Logos/Data_Portfolio_Logo_3.jpg')",
+  // },
   {
     icon: RxBarChart,
     title: "Data Analytics",
@@ -27,6 +27,17 @@ export const ServiceData = [
     link: " https://www.esanalysis.com/  ",
     image:
       "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Dr+Edwige_Services/data+analytics.jpg",
+    // backgroundImage:
+    //   "url('https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Dr+Edwige_Logos/Data_Portfolio_Logo_3.jpg')",
+  },
+  {
+    icon: RxLaptop,
+    title: "Academic Research",
+    content:
+      "ES Analysis provides research and development. A team of experts is dedicated to helping you with the literature review, managing your project, and completing your dissertation with ease.",
+    link: " https://www.researchgate.net/profile/Edwige-Feulefack-Songong-2 ",
+    image:
+      "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Dr+Edwige_Services/academic+research.png",
     // backgroundImage:
     //   "url('https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Dr+Edwige_Logos/Data_Portfolio_Logo_3.jpg')",
   },
