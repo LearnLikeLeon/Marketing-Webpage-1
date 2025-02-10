@@ -129,10 +129,13 @@ export default function ContactForm() {
             <option value="" disabled>
               Select a service
             </option>
+            <option value="Github Profile Optimization">
+              Github Profile Optimization
+            </option>
+            <option value="Data Analysis">Data Analysis</option>
             <option value="Research and Consulting">
               Research and Consulting
             </option>
-            <option value="Data Analysis">Data Analysis</option>
             <option value="Training">Training</option>
             <option value="Website Development">Website Development</option>
             <option value="Portfolio Building "> Portfolio Building</option>
@@ -163,15 +166,18 @@ export default function ContactForm() {
             <option value="" disabled>
               Select a training
             </option>
-            <option value="Research and Methodology">
-              Research and Methodology{" "}
-            </option>
+            <option value="SQL">SQL</option>
+            <option value="Excel">Excel</option>
+            <option value="Power BI">Power BI</option>
             <option value="Data Analysis">Data Analysis</option>
             <option value="Cloud Computing">Cloud Computing</option>
             <option value="Professional Development">
               Professional Development
             </option>
             <option value="Workshops">Workshops</option>
+            <option value="Research and Methodology">
+              Research and Methodology{" "}
+            </option>
             <option value="Other">Others</option>
           </select>
         </div>
