@@ -4,9 +4,9 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "website-image-1.s3.amazonaws.com",
+        hostname: "esanalysis-public-files.s3.us-east-2.amazonaws.com",
         port: "",
-        pathname: "/Data+analyst_Portfolio+Projects/**",
+        pathname: "/website/**",
       },
     ],
   },

@@ -2,133 +2,104 @@
 
 import Image from "next/image";
 
-const posts = [
+const posts_classified = [
   {
     id: 1,
-    href: "https://github.com/Songonge/Data-Analytics-Projects/tree/70fa3d5815628fde6f58dc81dca1ddf55b98193d/All%20Projects/Avocado%20Price%20Analysis",
+    href: "https://github.com/Songonge/Power-BI-Projects/tree/main/Credit%20Scoring%20Analysis",
     projectImageUrl:
-      // "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Avocado+Price+Analysis/Avocado+Price+Analysis/Avocado+Price+Analysis+Dashboard.png",
-      "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Avocado+Price+Analysis/Avocado+Price+Analysis/Avocado+Analysis+Dashboard.png",
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/Credit+Scoring+Analysis/Credit+Scoring+Analysis+Dashboard.png",
 
     techStack: "Power BI",
 
-    title: "Avocado Price Analysis",
-    // href: "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Avocado+Price+Analysis/Avocado+Price+Analysis/Avocado+Price+Analysis.pdf",
+    title: "Credit Risk Evaluation",
     description:
-      "This project aims to check what region in the USA has a high price of avocado and what number of bags of avocados were sold in the years 2015 to 2018.",
-    date: "May, 2023",
-    datetime: "2023-05-01",
+      "The project involves the analysis of credit scoring for the German Credit Data. It aimed at exploring the data to look for the greatest correlations with whether or not credit was granted and creating an interactive dashboard via Power BI to visualize the model results.",
+    date: "December, 2024",
+    datetime: "2024-12-15",
+    category: { title: "Finance", href: "#" },
+    author: {
+      name: "Dr. Edwige",
+      role: "Researcher / Analyst",
+      href: "#",
+      imageUrl:
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
+    },
+  },
+
+  {
+    id: 2,
+    href: "https://github.com/Songonge/Looker-Studio-Projects",
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Looker+Studio+Projects/Employee+Analysis+Dashboard.png",
+
+    techStack: "Looker Studio",
+
+    title: "Employee Demographics Analysis",
+    description:
+      "This project focuses on analyzing employee demographics within different departments and leadership roles for different countries and providing insights regarding leadership roles, years of experience, and industries.",
+    date: "January, 2025",
+    datetime: "2025-01-25",
+    category: { title: "HR", href: "#" },
+    author: {
+      name: "Dr. Edwige",
+      role: "Researcher / Analyst",
+      href: "#",
+      imageUrl:
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
+    },
+  },
+
+  {
+    id: 3,
+    href: "https://github.com/Songonge/Excel-Projects/tree/main/Sales%20Analysis",
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Excel+Projects/Sales+Analysis+in+the+USA/Sales+Analysis+Dashboard.png",
+
+    techStack: "Excel",
+
+    title: "Sales Analysis in the USA",
+    description:
+      "This project focused on analyzing sales performance, customer segmentation, and product trends for a Superstore business. The project involved data cleaning, exploratory data analysis, visualization, and deriving insights to aid decision-making.",
+    date: "January, 2025",
+    datetime: "2025-01-29",
     category: { title: "Sales", href: "#" },
     author: {
       name: "Dr. Edwige",
       role: "Researcher / Analyst",
       href: "#",
       imageUrl:
-        "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Author_1.jpg",
-    },
-  },
-
-  {
-    id: 2,
-    href: "https://github.com/Songonge/Data-Analytics-Projects/tree/70fa3d5815628fde6f58dc81dca1ddf55b98193d/All%20Projects/Cyclistic%20Rides%20Analysis",
-    projectImageUrl:
-      // "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Cyclistic+Rides+Analysis/Cyclistic+Ride+Analysis+Dashboard.png",
-      "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Cyclistic+Rides+Analysis/Cyclistic+Analysis+Dashboard.png",
-    techStack: "Excel",
-    title: "Cyclistic Rides Analysis",
-    // href: "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Cyclistic+Rides+Analysis/Cyclistic+Rides+Analysis+Report.pdf",
-    description:
-      "The purpose of this project is to understand how casual riders and annual members use Cyclistic bikes differently. This will help design a new marketing strategy to convert casual riders into annual members.",
-    date: "April, 2022",
-    datetime: "2022-04-01",
-    category: { title: "Marketing", href: "#" },
-    author: {
-      name: "Dr. Edwige",
-      role: "Researcher / Analyst",
-      href: "#",
-      imageUrl:
-        "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Author_1.jpg",
-    },
-  },
-
-  {
-    id: 3,
-    href: "https://github.com/Songonge/Data-Analytics-Projects/tree/70fa3d5815628fde6f58dc81dca1ddf55b98193d/All%20Projects/HR%20Analytics",
-    projectImageUrl:
-      // "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/HR+Analytics/HR+Analytics/Demographic+Dashboard.png",
-      "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/HR+Analytics/HR+Analytics/Demographic+-+Dashboard.png",
-    techStack: "Power BI",
-    title: "HR Analytics",
-    // href: "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/HR+Analytics/HR+Analytics/HR+Analytics+Report.pdf",
-    description:
-      "The project focuses on data analytics and carefully plans to reveal patterns and insights hidden in complex datasets. I use Power BI to facilitate the extraction of critical insights.",
-    date: "July, 2023",
-    datetime: "2023-07-01",
-    category: { title: "Human Resources", href: "#" },
-    author: {
-      name: "Dr. Edwige",
-      role: "Researcher / Analyst",
-      href: "#",
-      imageUrl:
-        "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Author_1.jpg",
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
     },
   },
 
   {
     id: 4,
-    href: "https://github.com/Songonge/Data-Analytics-Projects/tree/70fa3d5815628fde6f58dc81dca1ddf55b98193d/All%20Projects/Sales%20Analysis",
+    href: "https://github.com/Songonge/AWS-Projects/tree/main/SAAS%20Sales%20Analysis",
     projectImageUrl:
-      // "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Sales+Analysis/Sales+Analysis/Sales+Analysis+Dashboard.png",
-      "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Sales+Analysis/Sales+Analysis/Sales+Dashboard.png",
-    techStack: "Power BI",
-    title: "Sales Analysis",
-    // href: "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Sales+Analysis/Sales+Analysis/Sales+Analysis+Report.pdf",
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/AWS+QuickSight+Projects/SAAS+Sales+Analysis/SAAS+Sales+Analysis+Dashboard.png",
+    techStack: "Amazon QuickSight",
+    title: "SAAS Sales Analysis",
     description:
-      "The project dives into data sets about sales and focuses on analyzing the data to derive insights and propose actionable recommendations.",
-    date: "June, 2023",
-    datetime: "2023-06-16",
-    category: { title: "Business Intelligence", href: "#" },
+      "The project involved analyzing SAAS sales data, identifying key business metrics, and developing interactive visualizations using Amazon QuickSight which will serve as a decision-support tool, helping stakeholders identify patterns, optimize sales strategies, and enhance profitability.",
+    date: "February, 2025",
+    datetime: "2025-02-11",
+    category: { title: "Sales", href: "#" },
     author: {
       name: "Dr. Edwige",
       role: "Researcher / Analyst",
       href: "#",
       imageUrl:
-        "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Author_1.jpg",
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
     },
   },
 
   {
     id: 5,
-    href: "https://github.com/Songonge/Data-Analytics-Projects/tree/70fa3d5815628fde6f58dc81dca1ddf55b98193d/All%20Projects/Loan%20Analysis",
+    href: "https://github.com/Songonge/Tableau-Projects/tree/main/Donation%20Analysis",
     projectImageUrl:
-      "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Loan+Analysis/Loan+Analysis/Loan+Analysis+Dashboard.jpg",
-
-    techStack: "Amazon QuickSight",
-
-    title: "Loan Analysis",
-    // href: "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Loan+Analysis/Loan+Analysis/Loan+Analysis+Report.pdf",
-    description:
-      "This project uses Generative BI in action with Amazon Q in QuickSight to provide loan analysis. It generates an executive summary from a loan analysis dashboard created using natural language.",
-    date: "June, 2024",
-    datetime: "2024-06-01",
-    category: { title: "Marketing", href: "#" },
-    author: {
-      name: "Dr. Edwige",
-      role: "Researcher / Analyst",
-      href: "#",
-      imageUrl:
-        "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Author_1.jpg",
-    },
-  },
-
-  {
-    id: 6,
-    href: "https://github.com/Songonge/Data-Analytics-Projects/tree/70fa3d5815628fde6f58dc81dca1ddf55b98193d/All%20Projects/Donation%20Analysis",
-    projectImageUrl:
-      "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Donations+Analysis/Donations+Analysis/Donation+Analysis.png",
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Tableau+Projects/Donation+Analysis+Dashboard.png",
     techStack: "Tableau",
     title: "Donation Analysis",
-    // href: "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/all-projects/Donations+Analysis/Donations+Analysis/Donations+Analysis+Report.pdf",
     description:
       "The Donation Analysis project evaluates donation patterns, donor behaviors, and fundraising effectiveness to optimize future campaigns and maximize contributions. It involves analyzing data on donation amounts, frequency, and donor demographics.",
     date: "July, 2024",
@@ -139,7 +110,135 @@ const posts = [
       role: "Researcher / Analyst",
       href: "#",
       imageUrl:
-        "https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Author_1.jpg",
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
+    },
+  },
+
+  {
+    id: 6,
+    href: "https://github.com/Songonge/Power-BI-Projects/tree/main/Spotify%20Songs%20Analysis%202023",
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/Spotify+Songs+Analysis+2023/Spotify+Dashboard.png",
+    techStack: "Power BI",
+    title: "Spotify Songs Analysis",
+    description:
+      "This project provides an analysis of Spotify songs for the year 2023. The dataset includes famous songs listed on Spotify and describes each song's popularity and attributes on different music platforms.",
+    date: "September, 2023",
+    datetime: "2024-09-08",
+    category: { title: "Business Intelligence", href: "#" },
+    author: {
+      name: "Dr. Edwige",
+      role: "Researcher / Analyst",
+      href: "#",
+      imageUrl:
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
+    },
+  },
+
+  {
+    id: 7,
+    href: "https://github.com/Songonge/Power-BI-Projects/blob/main/Flight%20Delays%20and%20Cancelation%20Analysis/Flight_Delays_Analysis.md",
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/Flight+Delays+Analysis/Flights+Analysis+Dashboard.png",
+
+    techStack: "Power BI",
+
+    title: "Flight Delays and Cancelation Analysis",
+    description:
+      "This project focuses on analyzing flight status based on data collected from different airports during the year 2015. The project was completed during my internship at CognoRise Infotech.",
+    date: "June, 2024",
+    datetime: "2024-06-01",
+    category: { title: "Marketing", href: "#" },
+    author: {
+      name: "Dr. Edwige",
+      role: "Researcher / Analyst",
+      href: "#",
+      imageUrl:
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
+    },
+  },
+
+  {
+    id: 8,
+    href: "https://github.com/Songonge/Power-BI-Projects/tree/main/Netflix%20Content%20Analysis",
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/Netflix+Content+Analysis/Netflix+Dashboard.png",
+    techStack: "Power BI",
+    title: "Netflix Content Analysis",
+    description:
+      "This project provides a profound learning experience in data analytics by utilizing real-world data from Netflix to assess content from 2008 to 2021. It aims at implementing data analysis techniques to gain insights into watched trends, product performance, and customer preferences.",
+    date: "Mai, 2024",
+    datetime: "2024-05-20",
+    category: { title: "Business Intelligence", href: "#" },
+    author: {
+      name: "Dr. Edwige",
+      role: "Researcher / Analyst",
+      href: "#",
+      imageUrl:
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
+    },
+  },
+
+  {
+    id: 9,
+    href: "https://github.com/Songonge/Power-BI-Projects/blob/main/HR%20Analysis/HR_Analytics_Report.md",
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/HR+Analysis/Demographic+-+Dashboard.png",
+    techStack: "Power BI",
+    title: "HR Analytics",
+    description:
+      "This project aims at evaluating the current human resources practices within the organization, identifying key areas for improvement, and providing actionable recommendations aimed at enhancing workforce efficiency, employee satisfaction, and overall organizational performance.",
+    date: "Mai, 2024",
+    datetime: "2024-05-20",
+    category: { title: "Human Resources", href: "#" },
+    author: {
+      name: "Dr. Edwige",
+      role: "Researcher / Analyst",
+      href: "#",
+      imageUrl:
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
+    },
+  },
+
+  {
+    id: 10,
+    href: "https://github.com/Songonge/Excel-Projects/blob/main/Netflix%20Content%20Analysis/Netflix_Content_Analysis.md",
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Excel+Projects/Netflix+Content+Analysis/Nextflix+Dashboard+Excel.png",
+    techStack: "Excel",
+    title: "Netflix Content Analysis",
+    description:
+      "This project provides a profound learning experience in data analytics by utilizing real-world data from Netflix to assess content from 2008 to 2021. It aims at implementing data analysis techniques to gain insights into watched trends, product performance, and customer preferences.",
+    date: "Mai, 2024",
+    datetime: "2024-05-20",
+    category: { title: "Business Intelligence", href: "#" },
+    author: {
+      name: "Dr. Edwige",
+      role: "Researcher / Analyst",
+      href: "#",
+      imageUrl:
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
+    },
+  },
+
+  {
+    id: 11,
+    href: "https://github.com/Songonge/AWS-Projects/blob/main/Loan%20Analysis/Loan_Analysis.md",
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/AWS+QuickSight+Projects/Loan+Analysis/Loan+Analysis+Dashboard.png",
+    techStack: "Amazon QuickSight",
+    title: "Loan Analysis",
+    description:
+      "This project examines trends in the loan domain to shed light on the debt challenges facing many consumers. By analyzing lending patterns across different locations and credit profiles, it aims to identify opportunities for more affordable options that can help ease financial burdens and set citizens up for long-term prosperity.",
+    date: "June, 2024",
+    datetime: "2024-06-27",
+    category: { title: "Marketing", href: "#" },
+    author: {
+      name: "Dr. Edwige",
+      role: "Researcher / Analyst",
+      href: "#",
+      imageUrl:
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
     },
   },
 ];
@@ -164,7 +263,7 @@ export default function BlogSections() {
           </p>
         </div>
         <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-          {posts.map((post) => (
+          {posts_classified.map((post) => (
             <article
               key={post.id}
               className="flex max-w-xl flex-col items-start justify-between"

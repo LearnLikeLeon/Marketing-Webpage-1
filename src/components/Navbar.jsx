@@ -29,7 +29,7 @@ export default function Navbar() {
       <div className="flex justify-between items-center h-full w-full px-4 2xl:px-16">
         <Link href="/">
           <Image
-            src="https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Dr+Edwige_Logos/Data_Portfolio_Logo_3.jpg"
+            src="https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/Dr+Edwige_Logos/Data_Portfolio_Logo_3.jpg"
             alt="My Brand or Website Logo"
             width={80}
             height={80}

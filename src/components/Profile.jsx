@@ -9,7 +9,7 @@ export default function Profile() {
       {/*  Background Image */}
       <div className="w-full">
         <Image
-          src="https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Dr+Edwige_Profile/profile-background.jpg"
+          src="https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/Dr+Edwige_Profile/profile-background.jpg"
           alt="profile section background image"
           width={0}
           height={0}
@@ -21,7 +21,7 @@ export default function Profile() {
       {/* Photo */}
       <div className="flex flex-col items-center -mt-20 lg:-mt-32">
         <Image
-          src="https://website-image-1.s3.amazonaws.com/Data+analyst_Portfolio+Projects/Dr+Edwige_Profile/Edwige_Profile+Picture.jpg"
+          src="https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/Dr+Edwige_Profile/Edwige_Profile+Picture.jpg"
           alt="Author Logo"
           width={190}
           height={190}
