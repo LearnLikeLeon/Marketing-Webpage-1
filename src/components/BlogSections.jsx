@@ -5,7 +5,7 @@ import Image from "next/image";
 const posts_classified = [
   {
     id: 1,
-    href: "https://github.com/Songonge/Power-BI-Projects/tree/main/Credit%20Scoring%20Analysis",
+    href: "https://github.com/Songonge/Power-BI-Projects/blob/main/Credit%20Scoring%20Analysis/Credit_Scoring_Report.md",
     projectImageUrl:
       "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/Credit+Scoring+Analysis/Credit+Scoring+Analysis+Dashboard.png",
 
@@ -28,7 +28,7 @@ const posts_classified = [
 
   {
     id: 2,
-    href: "https://github.com/Songonge/Looker-Studio-Projects",
+    href: "https://github.com/Songonge/Looker-Studio-Projects/blob/main/Employee%20Analysis/Employee_Analysis_Report.md",
     projectImageUrl:
       "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Looker+Studio+Projects/Employee+Analysis+Dashboard.png",
 
@@ -51,7 +51,7 @@ const posts_classified = [
 
   {
     id: 3,
-    href: "https://github.com/Songonge/Excel-Projects/tree/main/Sales%20Analysis",
+    href: "https://github.com/Songonge/Excel-Projects/blob/main/Sales%20Analysis/Sales_Analysis_Report.md",
     projectImageUrl:
       "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Excel+Projects/Sales+Analysis+in+the+USA/Sales+Analysis+Dashboard.png",
 
@@ -74,7 +74,7 @@ const posts_classified = [
 
   {
     id: 4,
-    href: "https://github.com/Songonge/AWS-Projects/tree/main/SAAS%20Sales%20Analysis",
+    href: "https://github.com/Songonge/AWS-Projects/blob/main/SAAS%20Sales%20Analysis/Sales_Analysis.md",
     projectImageUrl:
       "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/AWS+QuickSight+Projects/SAAS+Sales+Analysis/SAAS+Sales+Analysis+Dashboard.png",
     techStack: "Amazon QuickSight",
@@ -95,7 +95,7 @@ const posts_classified = [
 
   {
     id: 5,
-    href: "https://github.com/Songonge/Tableau-Projects/tree/main/Donation%20Analysis",
+    href: "https://github.com/Songonge/Tableau-Projects/blob/main/Donation%20Analysis/Donation_Analysis_Report.md",
     projectImageUrl:
       "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Tableau+Projects/Donation+Analysis+Dashboard.png",
     techStack: "Tableau",
@@ -116,7 +116,7 @@ const posts_classified = [
 
   {
     id: 6,
-    href: "https://github.com/Songonge/Power-BI-Projects/tree/main/Spotify%20Songs%20Analysis%202023",
+    href: "https://github.com/Songonge/Power-BI-Projects/blob/main/Spotify%20Songs%20Analysis%202023/Spotify_Songs_Analysis.md",
     projectImageUrl:
       "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/Spotify+Songs+Analysis+2023/Spotify+Dashboard.png",
     techStack: "Power BI",
@@ -160,7 +160,7 @@ const posts_classified = [
 
   {
     id: 8,
-    href: "https://github.com/Songonge/Power-BI-Projects/tree/main/Netflix%20Content%20Analysis",
+    href: "https://github.com/Songonge/Power-BI-Projects/blob/main/Netflix%20Content%20Analysis/Netflix%20Content%20Analysis.md",
     projectImageUrl:
       "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/Netflix+Content+Analysis/Netflix+Dashboard.png",
     techStack: "Power BI",
@@ -233,6 +233,27 @@ const posts_classified = [
     date: "June, 2024",
     datetime: "2024-06-27",
     category: { title: "Marketing", href: "#" },
+    author: {
+      name: "Dr. Edwige",
+      role: "Researcher / Analyst",
+      href: "#",
+      imageUrl:
+        "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
+    },
+  },
+
+  {
+    id: 12,
+    href: "https://github.com/Songonge/Power-BI-Projects/blob/main/Sales%20Analysis/Sales_Analysis_Report.md",
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/Sales+Analysis/Sales+Analysis+Dashboard.png",
+    techStack: "Power BI",
+    title: "Sales Analysis by Product",
+    description:
+      "The project is focused on data analytics and is carefully planned to reveal patterns and insights hidden in complex datasets. Power BI was used to facilitate the extraction of critical insights.",
+    date: "April, 2024",
+    datetime: "2024-04-01",
+    category: { title: "Sales", href: "#" },
     author: {
       name: "Dr. Edwige",
       role: "Researcher / Analyst",
