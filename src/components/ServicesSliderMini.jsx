@@ -10,6 +10,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import Image from "next/image";
+import Link from "next/link";
 
 import { ServiceData } from "./services/listOfServices";
 
@@ -39,52 +40,47 @@ const PhoneSlider = () => {
         </header>
       </div>
 
-      <div className="">
-        <Swiper
-          navigation
-          pagination={{ type: "bullets", clickable: true }}
-          autoplay={true}
-          loop={true}
-          modules={[Autoplay, Navigation, Pagination]}
-        >
-          {ServiceData.map((item) => (
-            <SwiperSlide key={item.id} className="">
-              {/* style={{
-                    background: `url(${item.image}) center center / cover scroll no-repeat`,
-                  }} */}
-
-              {/*
-                    
-                    <div className="h-full w-full absolute left-0 top-0"></div>
-                <div className="h-full w-full absolute left-0 top-0 bg-black opacity-20"></div>
-                    
-                */}
-
-              <div className="relative z-10 h-full flex flex-col items-center justify-center">
-                <div className="text-center">
-                  {item.tagline && (
-                    <p className="text-md sm:text-xl lg:text-3xl font-semibold text-black">
-                      {item.tagline}
-                    </p>
-                  )}
-                  <p className="text-xl font-bold font-serif text-black">
-                    {item.title}
+      <Swiper
+        style={{
+          "--swiper-navigation-color": "#0c023e",
+          "--swiper-pagination-color": "#0c023e",
+        }}
+        className="swiper"
+        modules={[Autoplay, Navigation, Pagination]}
+        spaceBetween={20}
+        slidesPerView={1}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        navigation
+        pagination={{ clickable: true }}
+      >
+        {ServiceData.map((item) => (
+          <SwiperSlide key={item.id}>
+            <div className="bg-blue-300 rounded-lg shadow-md p-2 md:p-4 h-full flex flex-col ">
+              <div className="text-center">
+                {item.tagline && (
+                  <p className="text-md sm:text-xl lg:text-3xl font-semibold text-black">
+                    {item.tagline}
                   </p>
-                </div>
-                <div className="service-image">
-                  <Image
-                    src={item.image}
-                    alt="service-illustration-image"
-                    width={240}
-                    height={0}
-                    className=" flex items-center justify-center mx-auto"
-                  />
-                </div>
+                )}
+                <p className="text-xl font-bold font-serif text-black">
+                  {item.title}
+                </p>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
+
+              <Image
+                src={item.image}
+                alt="service-illustration-image"
+                width={300}
+                height={200}
+                className="w-3/4 h-52 object-cover mb-4 rounded-xl items-center mx-auto"
+              />
+            </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
     </section>
   );
 };

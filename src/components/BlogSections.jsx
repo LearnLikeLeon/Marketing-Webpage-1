@@ -276,7 +276,7 @@ export default function BlogSections() {
             A list of my top data analysis projects is given below. The
             technology stack used for some of these projects is:
             <b>
-              <i>
+              <i className="m-2">
                 Excel, Power BI, Tableau, Amazon QuickSight, SQL, Python and
                 R-Programming, and AWS.
               </i>
