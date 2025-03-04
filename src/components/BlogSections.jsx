@@ -167,7 +167,7 @@ const posts_classified = [
     title: "Netflix Content Analysis",
     description:
       "This project provides a profound learning experience in data analytics by utilizing real-world data from Netflix to assess content from 2008 to 2021. It aims at implementing data analysis techniques to gain insights into watched trends, product performance, and customer preferences.",
-    date: "Mai, 2024",
+    date: "May, 2024",
     datetime: "2024-05-20",
     category: { title: "Business Intelligence", href: "#" },
     author: {
@@ -188,7 +188,7 @@ const posts_classified = [
     title: "HR Analytics",
     description:
       "This project aims at evaluating the current human resources practices within the organization, identifying key areas for improvement, and providing actionable recommendations aimed at enhancing workforce efficiency, employee satisfaction, and overall organizational performance.",
-    date: "Mai, 2024",
+    date: "May, 2024",
     datetime: "2024-05-20",
     category: { title: "Human Resources", href: "#" },
     author: {
@@ -209,7 +209,7 @@ const posts_classified = [
     title: "Netflix Content Analysis",
     description:
       "This project provides a profound learning experience in data analytics by utilizing real-world data from Netflix to assess content from 2008 to 2021. It aims at implementing data analysis techniques to gain insights into watched trends, product performance, and customer preferences.",
-    date: "Mai, 2024",
+    date: "May, 2024",
     datetime: "2024-05-20",
     category: { title: "Business Intelligence", href: "#" },
     author: {
