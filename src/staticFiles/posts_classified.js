@@ -1,26 +1,17 @@
-"use client";
-
-import Image from "next/image";
-import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-
-// import { BlogCard_2 } from "./BlogCard_2";
-// import { getAllPosts } from "@/lib/posts";
-// import { getAllClassifiedPosts } from "@/lib/posts_classified";
-
 const posts_classified = [
   {
     slug: "credit-risk-evaluation",
-    title: "Credit Risk Evaluation",
     id: 1,
     href: "https://github.com/Songonge/Power-BI-Projects/blob/main/Credit%20Scoring%20Analysis/Credit_Scoring_Report.md",
     projectImageUrl:
       "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/Credit+Scoring+Analysis/Credit+Scoring+Analysis+Dashboard.png",
 
     techStack: "Power BI",
+
+    title: "Credit Risk Evaluation",
     description:
       "The project involves the analysis of credit scoring for the German Credit Data. It aimed at exploring the data to look for the greatest correlations with whether or not credit was granted and creating an interactive dashboard via Power BI to visualize the model results.",
-    date: "December, 2024",
+    date: "December 15, 2024",
     datetime: "2024-12-15",
     category: { title: "Finance", href: "#" },
     author: {
@@ -30,6 +21,27 @@ const posts_classified = [
       imageUrl:
         "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/author/Author_1.jpg",
     },
+
+    // Single Post detailed :
+    // slug: "credit-risk-evaluation",
+    excerpt:
+      "Learn how to analyse Credit scoring for a german Credit Data firm.",
+    content: `
+          The project involves the analysis of credit scoring for the German Credit Data. The tasks to be completed are as follows:
+
+            - Explore the data to look for the greatest correlations with whether or not credit is granted
+            - Develop a credit scoring prediction model.
+            - Create a Dockerfile for deployment.
+            - Host the code on GitHub or GitLab.
+            - Create an interactive dashboard via Power BI or Looker Studio to visualize the model results.
+    
+        The dashboard reveals that a large portion of loans are issued to younger borrowers (20–40 years old) with minimal financial reserves and are concentrated in car-related purposes. While most borrowers fall under the "good risk" category, a significant proportion are still high-risk borrowers.
+          
+        `,
+    coverImage:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/HR+Analysis/Demographic+-+Dashboard.png",
+    readingTime: 5,
+    tags: ["Finance", "Power Bi", "Data Analysis"],
   },
 
   {
@@ -215,7 +227,7 @@ const posts_classified = [
   },
 
   {
-    slug: "netflix-content-analysis",
+    slug: "netflix-content-analysis ",
     id: 10,
     href: "https://github.com/Songonge/Excel-Projects/blob/main/Netflix%20Content%20Analysis/Netflix_Content_Analysis.md",
     projectImageUrl:
@@ -259,7 +271,7 @@ const posts_classified = [
   },
 
   {
-    slug: "sales-analysis-by-product",
+    slug: "sales-analysis-by-product ",
     id: 12,
     href: "https://github.com/Songonge/Power-BI-Projects/blob/main/Sales%20Analysis/Sales_Analysis_Report.md",
     projectImageUrl:
@@ -281,111 +293,13 @@ const posts_classified = [
   },
 ];
 
-export default function BlogSections() {
-  // const posts = await getAllPosts();
-  // const posts_classified_2 = await getAllClassifiedPosts();
-  return (
-    <div className="bg-white py-24 sm:py-32 font-serif">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl lg:mx-0 mb-8">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            Project Showcases
-          </h2>
-          <p className="mt-2 indent-8 text-lg leading-8 text-gray-600 text-justify">
-            A list of my top data analysis projects is given below. The
-            technology stack used for some of these projects is:
-            <b>
-              <i className="m-2">
-                Excel, Power BI, Tableau, Amazon QuickSight, SQL, Python and
-                R-Programming, and AWS.
-              </i>
-            </b>
-          </p>
-        </div>
-
-        <section className="border-t border-gray-200">
-          <div className="flex items-center justify-between m-4">
-            <h2 className="text-2xl font-bold tracking-tight">Latest Posts</h2>
-            <Link
-              href="/projects"
-              className="inline-flex items-center gap-1 text-lg font-semibold text-blue-600"
-            >
-              View all posts
-              <ArrowRight className="w-4 h-4" />
-            </Link>
-          </div>
-
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-3 mt-8">
-            {posts_classified.slice(0, 3).map((post) => (
-              <article
-                key={post.id}
-                className="flex max-w-xl flex-col items-start justify-between"
-              >
-                <div className="flex items-center gap-x-4 text-xs">
-                  <time dateTime={post.datetime} className="text-gray-500">
-                    {post.date}
-                  </time>
-                  <a
-                    href={post.category.href}
-                    className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100"
-                  >
-                    {post.category.title}
-                  </a>
-                </div>
-
-                <div className="items-center mx-auto">
-                  <Image
-                    className="rounded-2xl drop-shadow-md hover:drop-shadow-xl transition-all duration-200 delay-100"
-                    src={`${post.projectImageUrl}`}
-                    alt="An image of the final project"
-                    width={250}
-                    height={200}
-                  />
-                </div>
-
-                <div className="group relative">
-                  <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <a href={post.href}>
-                      <span className="absolute inset-0" />
-                      {post.techStack} | {post.title}
-                    </a>
-                  </h3>
-                  <p className="mt-5 line-clamp-3 text-sm leading-6 text-gray-600 text-justify">
-                    {post.description.substring(0, 100)}...
-                  </p>
-                  {/* <a href={post.href} className="block w-max text-cyan-600">
-                     Read more
-                   </a> */}
-                </div>
-                <Link href={`/projects/${post.slug}`} className="block">
-                  <h3 className="text-lg font-bold leading-tight hover:underline text-cyan-600 italic">
-                    Read more ...
-                  </h3>
-                </Link>
-                <div className="relative mt-8 flex items-center gap-x-4">
-                  <Image
-                    width={50}
-                    height={50}
-                    alt="An image of the author"
-                    src={post.author.imageUrl}
-                    className="rounded-full bg-gray-50"
-                  />
-
-                  <div className="text-sm leading-6">
-                    <p className="font-semibold text-gray-900">
-                      <a href={post.author.href}>
-                        <span className="absolute inset-0" />
-                        {post.author.name}
-                      </a>
-                    </p>
-                    <p className="text-gray-600">{post.author.role}</p>
-                  </div>
-                </div>
-              </article>
-            ))}
-          </div>
-        </section>
-      </div>
-    </div>
+export async function getAllClassifiedPosts() {
+  // Sort posts by date in descending order
+  return [...posts_classified].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
+}
+
+export async function getClassifiedPostBySlug(slug) {
+  return posts_classified.find((post) => post.slug === slug);
 }
