@@ -1,4 +1,4 @@
-import { getAllCompletedProjects } from "../../staticFiles/projects";
+import { getAllClassifiedPosts } from "../../staticFiles/posts_classified";
 import { SingleProjectCard } from "../../components/cards/SingleProjectCard";
 
 export const metadata = {
@@ -7,7 +7,7 @@ export const metadata = {
 };
 
 export default async function BlogPage() {
-  const projects = await getAllCompletedProjects();
+  const projects = await getAllClassifiedPosts();
 
   return (
     <div className="flex flex-col justify-center mx-auto">

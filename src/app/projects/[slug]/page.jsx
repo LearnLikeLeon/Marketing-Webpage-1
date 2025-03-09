@@ -26,7 +26,7 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${post.title} | Next.js Blog`,
+    title: `${post.title} | ES Analysis Blog`,
     description: post.excerpt,
   };
 }
@@ -95,6 +95,18 @@ export default async function BlogPost({ params }) {
       </h2>
       <div className="prose prose-blue max-w-none m-4">
         {post.steps.split("\n\n").map((paragraph, index) => (
+          <p key={index}>{paragraph}</p>
+        ))}
+      </div>
+
+      {/*   Tools : */}
+
+      <h2 className="text-2xl font-bold">
+        {" "}
+        Required Tools for this project :{" "}
+      </h2>
+      <div className="prose prose-blue max-w-none m-4">
+        {post.tools.split("\n\n").map((paragraph, index) => (
           <p key={index}>{paragraph}</p>
         ))}
       </div>

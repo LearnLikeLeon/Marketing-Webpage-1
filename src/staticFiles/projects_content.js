@@ -20,7 +20,7 @@ const completed_detailed_projects = [
                 - Provide actionable insights. \n
               `,
 
-    Tools: `
+    tools: `
               The following tools were used:\n
         
               - Microsoft SQL Server to clean and prepare the data.  \n
@@ -51,7 +51,186 @@ const completed_detailed_projects = [
               `,
 
     readingTime: 5,
-    tags: ["SQL Server", "Power BI", "Technology", "Data Analysis"],
+    tags: [
+      "SQL Server",
+      "Power BI",
+      "Business Intelligence",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
+  },
+
+  {
+    slug: "sales-analysis-in-the-usa",
+    title: "Sales Analysis in the USA",
+    date: "January 29, 2025",
+    author: "Dr. Edwige",
+
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Excel+Projects/Sales+Analysis+in+the+USA/Sales+Analysis+Dashboard.png",
+
+    description:
+      "This project focuses on analyzing sales performance, customer segmentation, and product trends for a Superstore business. The dataset contained sales transactions across various regions, customer segments, product categories, and subcategories.",
+
+    goals: `
+              The main objectives of this project were to: \n
+  
+              - Identify products generating the highest revenues. \n
+              - Determine revenue distribution across regions. \n
+              - Identify the top five customers by revenue. \n
+              - Determine the most sought-after products. \n
+              - Identify the customer segment with the largest number of customers. \n
+              - Analyze sales and profit trends over time.  \n
+            `,
+
+    tools: `
+              The following tools were used: \n
+        
+              - Power Query in Microsoft Excel to clean and analyze the data.  \n
+              - Microsoft Excel To Build an interactive dashboard. \n
+            `,
+
+    steps: `
+                The following steps were completed: \n
+          
+                - Download the dataset from Kaggle  using this link: https://www.kaggle.com/code/danishmubashar/superstore-sales-profit-discount-predict?select=Sample+-+Superstore.csv. \n
+                - Import the dataset in Excel to clean and transform it. \n
+                - Create fact and dimension tables. \n
+                - Model the dataset to create relationships between tables. \n
+                - Analyze the data in Excel by creating Pivot Tables. \n
+                - Putting all the visuals together in an interactive dashboard to communicate insights from the analysis. \n
+                - Provide recommendations on how to optimize sales strategies. \n
+              `,
+
+    conclusion: `
+                This project analyzed the Superstore dataset using Excel. By leveraging data cleaning, analysis, and visualization techniques, key insights into sales trends, customer behavior, and product performance were uncovered. Implementing the recommended strategies can drive business growth and profitability in the future. \n
+              `,
+
+    readingTime: 5,
+    tags: [
+      "Power Query",
+      "Excel",
+      "Sales",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
+  },
+
+  {
+    slug: "saas-sales-analysis",
+    title: "SAAS Sales Analysis",
+    date: "February 11, 2025",
+    author: "Dr. Edwige",
+
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/AWS+QuickSight+Projects/SAAS+Sales+Analysis/SAAS+Sales+Analysis+Dashboard.png",
+
+    description:
+      "This project aims to design and implement a Sales Analysis Dashboard that visualizes key performance indicators (KPIs) such as total sales, profit, customer distribution, and industry trends.",
+
+    goals: `
+                The following goals were achieved:\n
+          
+                - Analyze SAAS sales data to identify key business metrics.  \n
+                - Build an interactive dashboard that provides an intuitive interface for monitoring business performance across different dimensions. \n
+                - Uncover insights and provide recommendations for better business decisions. \n
+              `,
+
+    tools: `
+              The following tools were used: \n
+        
+              - Microsoft Excel to clean the data.  \n
+              - Amazon QuickSight to analyze and build the dashboard. \n
+            `,
+
+    steps: `
+                The following tasks were completed: \n
+          
+                - Download the dataset from the Amazon QuickSight page.  \n
+                - Clean and transform the data in Excel. \n
+                - Import the dataset to Amazon QuickSight to perform the analysis. \n
+                - Analyze data and create an interactive dashboard. \n
+                - Deliver insights from the analysis. \n
+                - Provide recommendations for better decision-making. \n
+              `,
+
+    conclusion: `
+                This project helped in analyzing the SAAS sales dataset and creating a dashboard successfully provided actionable insights into business performance. By leveraging Amazon QuickSight, the dashboard would allow stakeholders to make informed decisions based on real-time data, optimizing sales strategies and profitability. Further enhancements, such as integrating machine learning models for sales forecasting, helped in predictive analytics and could drive long-term business success. \n
+              `,
+
+    readingTime: 4,
+    tags: [
+      "Excel",
+      "Amazon QuickSight",
+      "Sales",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
+  },
+
+  {
+    slug: "employee-demographics-analysis",
+    title: "Employee Demographics Analysis",
+    date: "January 25, 2025",
+    author: "Dr. Edwige",
+
+    projectImageUrl:
+      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Looker+Studio+Projects/Employee+Analysis+Dashboard.png",
+
+    description:
+      "This project focuses on analyzing employee data from different countries and providing insights regarding leadership roles, years of experience, industries, and leadership positions.",
+
+    goals: `
+                The project specifically analyzes employee demographics within different departments and leadership roles for different countries. In this project, the following were addressed: \n
+               
+                - Analyze employee demographics data to identify workforce needs and predict employee success.  \n
+                - Create visuals to uncover insights from the analysis. \n
+                - Build an interactive dashboard where trends can be easily identified. \n
+                - Provide recommendations about how to optimize company structure and policies. \n
+              `,
+
+    tools: `
+              The following tools were used: \n
+        
+              - Microsoft Excel to clean the data.  \n
+              - Looker Studio to analyze and build the dashboard. \n
+            `,
+    steps: `
+              To complete this project, the following were performed: \n
+          
+                - Use ChatGPT to create the dataset.  \n
+                - Use Excel to clean the data and prepare it for analysis. \n
+                - Import the data to Looker Studio and analyze it to uncover insights. \n
+                - Create visuals and build the interactive dashboard. \n
+          
+              `,
+
+    conclusion: `
+                This project provided a comprehensive analysis of the employee data using Looker Studio. By leveraging data cleaning, analysis, and visualization techniques, key insights about leadership roles, years of experience, reasons for transfer from one role to another, and the number of industries by country were uncovered. \n
+                
+              `,
+
+    readingTime: 3,
+
+    tags: [
+      "Excel",
+      "Looker Studio",
+      "HR",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
   },
 
   {
@@ -74,7 +253,7 @@ const completed_detailed_projects = [
                 - Create an interactive dashboard via Power BI to visualize the model results. \n
               `,
 
-    Tools: `
+    tools: `
               The following tools were used: \n
         
               - Microsoft SQL Server to clean the data.  \n
@@ -103,150 +282,16 @@ const completed_detailed_projects = [
               `,
 
     readingTime: 5,
-    tags: ["SQL Server", "Power BI", "Finance", "Data Analysis"],
-  },
-
-  {
-    slug: "employee-demographics-analysis",
-    title: "Employee Demographics Analysis",
-    date: "January 25, 2025",
-    author: "Dr. Edwige",
-
-    projectImageUrl:
-      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Looker+Studio+Projects/Employee+Analysis+Dashboard.png",
-
-    description:
-      "This project focuses on analyzing employee data from different countries and providing insights regarding leadership roles, years of experience, industries, and leadership positions.",
-
-    goals: `
-                The project specifically analyzes employee demographics within different departments and leadership roles for different countries. In this project, the following were addressed: \n
-               
-                - Analyze employee demographics data to identify workforce needs and predict employee success.  \n
-                - Create visuals to uncover insights from the analysis. \n
-                - Build an interactive dashboard where trends can be easily identified. \n
-                - Provide recommendations about how to optimize company structure and policies. \n
-              `,
-
-    Tools: `
-              The following tools were used: \n
-        
-              - Microsoft Excel to clean the data.  \n
-              - Looker Studio to analyze and build the dashboard. \n
-            `,
-    steps: `
-              To complete this project, the following were performed: \n
-          
-                - Use ChatGPT to create the dataset.  \n
-                - Use Excel to clean the data and prepare it for analysis. \n
-                - Import the data to Looker Studio and analyze it to uncover insights. \n
-                - Create visuals and build the interactive dashboard. \n
-          
-              `,
-
-    conclusion: `
-                This project provided a comprehensive analysis of the employee data using Looker Studio. By leveraging data cleaning, analysis, and visualization techniques, key insights about leadership roles, years of experience, reasons for transfer from one role to another, and the number of industries by country were uncovered. \n
-                
-              `,
-
-    readingTime: 3,
-
-    tags: ["Excel", "Looker Studio", "HR", "Data Analysis"],
-  },
-
-  {
-    slug: "sales-analysis-in-the-usa",
-    title: "Sales Analysis in the USA",
-    date: "January 29, 2025",
-    author: "Dr. Edwige",
-
-    projectImageUrl:
-      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/Power+BI+Projects/Tech+Solution/Tech_Dashboard.png",
-
-    description:
-      "This project focuses on analyzing sales performance, customer segmentation, and product trends for a Superstore business. The dataset contained sales transactions across various regions, customer segments, product categories, and subcategories.",
-
-    goals: `
-              The main objectives of this project were to: \n
-  
-              - Identify products generating the highest revenues. \n
-              - Determine revenue distribution across regions. \n
-              - Identify the top five customers by revenue. \n
-              - Determine the most sought-after products. \n
-              - Identify the customer segment with the largest number of customers. \n
-              - Analyze sales and profit trends over time.  \n
-            `,
-
-    Tools: `
-              The following tools were used: \n
-        
-              - Power Query in Microsoft Excel to clean and analyze the data.  \n
-              - Microsoft Excel To Build an interactive dashboard. \n
-            `,
-
-    steps: `
-                The following steps were completed: \n
-          
-                - Download the dataset from Kaggle  using this link: https://www.kaggle.com/code/danishmubashar/superstore-sales-profit-discount-predict?select=Sample+-+Superstore.csv. \n
-                - Import the dataset in Excel to clean and transform it. \n
-                - Create fact and dimension tables. \n
-                - Model the dataset to create relationships between tables. \n
-                - Analyze the data in Excel by creating Pivot Tables. \n
-                - Putting all the visuals together in an interactive dashboard to communicate insights from the analysis. \n
-                - Provide recommendations on how to optimize sales strategies. \n
-              `,
-
-    conclusion: `
-                This project analyzed the Superstore dataset using Excel. By leveraging data cleaning, analysis, and visualization techniques, key insights into sales trends, customer behavior, and product performance were uncovered. Implementing the recommended strategies can drive business growth and profitability in the future. \n
-              `,
-
-    readingTime: 5,
-    tags: ["Power Query", "Excel", "Sales", "Data Analysis"],
-  },
-
-  {
-    slug: "saas-sales-analysis",
-    title: "SAAS Sales Analysis",
-    date: "February 11, 2025",
-    author: "Dr. Edwige",
-
-    projectImageUrl:
-      "https://esanalysis-public-files.s3.us-east-2.amazonaws.com/website/all-projects/AWS+QuickSight+Projects/SAAS+Sales+Analysis/SAAS+Sales+Analysis+Dashboard.png",
-
-    description:
-      "This project aims to design and implement a Sales Analysis Dashboard that visualizes key performance indicators (KPIs) such as total sales, profit, customer distribution, and industry trends.",
-
-    goals: `
-                The following goals were achieved:\n
-          
-                - Analyze SAAS sales data to identify key business metrics.  \n
-                - Build an interactive dashboard that provides an intuitive interface for monitoring business performance across different dimensions. \n
-                - Uncover insights and provide recommendations for better business decisions. \n
-              `,
-
-    Tools: `
-              The following tools were used: \n
-        
-              - Microsoft Excel to clean the data.  \n
-              - Amazon QuickSight to analyze and build the dashboard. \n
-            `,
-
-    steps: `
-                The following tasks were completed: \n
-          
-                - Download the dataset from the Amazon QuickSight page.  \n
-                - Clean and transform the data in Excel. \n
-                - Import the dataset to Amazon QuickSight to perform the analysis. \n
-                - Analyze data and create an interactive dashboard. \n
-                - Deliver insights from the analysis. \n
-                - Provide recommendations for better decision-making. \n
-              `,
-
-    conclusion: `
-                This project helped in analyzing the SAAS sales dataset and creating a dashboard successfully provided actionable insights into business performance. By leveraging Amazon QuickSight, the dashboard would allow stakeholders to make informed decisions based on real-time data, optimizing sales strategies and profitability. Further enhancements, such as integrating machine learning models for sales forecasting, helped in predictive analytics and could drive long-term business success. \n
-              `,
-
-    readingTime: 4,
-    tags: ["Excel", "Amazon QuickSight", "Sales", "Data Analysis"],
+    tags: [
+      "SQL Server",
+      "Power BI",
+      "Finance",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
   },
 
   {
@@ -272,7 +317,7 @@ const completed_detailed_projects = [
                 - Identify the year of maximum donations. \n
               `,
 
-    Tools: `
+    tools: `
               The following tools were used:\n
         
               - Tableau Prep to clean the data.  \n
@@ -297,7 +342,16 @@ const completed_detailed_projects = [
 
     readingTime: 5,
 
-    tags: ["Tableau Prep", "Tableau Desktop", "Marketing", "Data Analysis"],
+    tags: [
+      "Tableau Prep",
+      "Tableau Desktop",
+      "Marketing",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
   },
 
   {
@@ -321,7 +375,7 @@ const completed_detailed_projects = [
                 - Perform a predictive analysis for emerging artists or trends to allow Spotify to remain competitive in the digital music landscape. \n
               `,
 
-    Tools: `
+    tools: `
               The following tools were used: \n
         
               - PostgreSQL to clean and prepare the data.  \n
@@ -350,7 +404,16 @@ const completed_detailed_projects = [
               `,
 
     readingTime: 5,
-    tags: ["PostgreSQL", "Power BI", "Technology", "Data Analysis"],
+    tags: [
+      "PostgreSQL",
+      "Power BI",
+      "Business Intelligence",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
   },
 
   {
@@ -374,7 +437,7 @@ const completed_detailed_projects = [
                 - Leverage historical data for predictive analytics to help airlines anticipate delays and cancellations. \n
               `,
 
-    Tools: `
+    tools: `
               The following tools were used:\n
         
               - Power Query in Power BI to clean the data.  \n
@@ -400,7 +463,16 @@ const completed_detailed_projects = [
               `,
 
     readingTime: 5,
-    tags: ["Power Query", "Power BI", "Marketing", "Data Analysis"],
+    tags: [
+      "Power Query",
+      "Power BI",
+      "Marketing",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
   },
 
   {
@@ -423,7 +495,7 @@ const completed_detailed_projects = [
                 - Help the company improve in resource allocation by leveraging data-driven decisions to maximize customer satisfaction. \n
               `,
 
-    Tools: `
+    tools: `
               The following tools were used:\n
         
               - Power Query in Micosoft Excel to clean the data.  \n
@@ -452,7 +524,16 @@ const completed_detailed_projects = [
 
     readingTime: 3,
 
-    tags: ["Power Query", "Excel", "Business Intelligence", "Data Analysis"],
+    tags: [
+      "Power Query",
+      "Excel",
+      "Business Intelligence",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
   },
 
   {
@@ -476,7 +557,7 @@ const completed_detailed_projects = [
               - Provide insights into workforce diversity and communicate patterns for informed decision-making to enhance HR practices.  \n
             `,
 
-    Tools: `
+    tools: `
               The following tools were used: \n
         
               - Power Query in Power BI to clean the data.  \n
@@ -503,7 +584,16 @@ const completed_detailed_projects = [
               `,
 
     readingTime: 5,
-    tags: ["Power Query", "Power BI", "HR", "Data Analysis"],
+    tags: [
+      "Power Query",
+      "Power BI",
+      "HR",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
   },
 
   {
@@ -528,7 +618,7 @@ const completed_detailed_projects = [
                 - Uncover insights and provide recommendations for lenders to gain insights into borrower behavior, identify risks, and improve operational efficiency. \n
               `,
 
-    Tools: `
+    tools: `
               Amazon QuickSight was used to: \n
         
               - Clean the data and analyze it. \n 
@@ -551,7 +641,15 @@ const completed_detailed_projects = [
               `,
 
     readingTime: 4,
-    tags: ["Amazon QuickSight", "Marketing", "Data Analysis"],
+    tags: [
+      "Amazon QuickSight",
+      "Marketing",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
   },
 
   {
@@ -575,7 +673,7 @@ const completed_detailed_projects = [
                 - Identify the day of the week and the month with major sales. \n
               `,
 
-    Tools: `
+    tools: `
               The following tools were used: \n
         
               - Power Query in Power BI to clean the data.  \n
@@ -603,7 +701,16 @@ const completed_detailed_projects = [
 
     readingTime: 5,
 
-    tags: ["Power Query", "Power BI", "Sales", "Data Analysis"],
+    tags: [
+      "Power Query",
+      "Power BI",
+      "Sales",
+      "Data Analysis",
+      "Data Cleaning",
+      "Dashboard",
+      "Insight",
+      "Recommendation",
+    ],
   },
 ];
 

@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import BlogSection_2 from "../components/BlogSection_2";
+import ProjectShowcase from "../components/ProjectShowcase";
 import ContactForm from "../components/ContactForm";
 import Profile from "../components/Profile";
 import ServicesSlider from "../components/ServicesSlider";
@@ -20,7 +20,7 @@ export default function Home() {
         {/* Blog Section */}
 
         <section id="blog">
-          <BlogSection_2 />
+          <ProjectShowcase />
         </section>
 
         {/* Service Section */}
