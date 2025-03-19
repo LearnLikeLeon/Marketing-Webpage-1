@@ -23,14 +23,6 @@ export default function Home() {
           <ProjectShowcase />
         </section>
 
-        <section id="blog">
-          <ProjectShowcase />
-        </section>
-
-        <section id="blog">
-          <ProjectShowcase />
-        </section>
-
         {/* Service Section */}
         <section id="services">
           <div className="flex md:hidden">
