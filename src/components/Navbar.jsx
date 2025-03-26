@@ -37,6 +37,7 @@ export default function Navbar() {
             priority
           />
         </Link>
+
         <div className="hidden sm:flex">
           <ul className="hidden sm:flex">
             <li>
@@ -77,6 +78,15 @@ export default function Navbar() {
                 {" "}
                 Contact{" "}
               </button>
+            </li>
+            <li>
+              <a
+                href=" https://calendly.com/edwigesongong/30min"
+                className="ml-10 inline-flex justify-center rounded-md bg-blue-300 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 "
+              >
+                {" "}
+                Schedule a free consultation{" "}
+              </a>
             </li>
           </ul>
         </div>
@@ -141,11 +151,17 @@ export default function Navbar() {
                   Contact{" "}
                 </button>
               </li>
+              <li className="rounded-md bg-blue-300 text-sm font-semibold w-48 px-3 py-2 mt-8">
+                <a href=" https://calendly.com/edwigesongong/30min">
+                  {" "}
+                  Book a free consultation{" "}
+                </a>
+              </li>
             </div>
           </ul>
         </div>
 
-        <div className=" flex flex-row justify-around pt-10 items-center">
+        <div className=" flex flex-row justify-around pt-4 items-center">
           <a href="https://x.com/edwige_songong">
             <RxTwitterLogo
               href="https://www.x.com/edwige_songong"

@@ -95,8 +95,8 @@ export default function Profile() {
           </Link>
 
           <Link
-            href="https://www.linkedin.com/in/edwige-f-songong"
-            className="inline-flex justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+            href="https://calendly.com/edwigesongong/30min"
+            className="inline-flex justify-center rounded-md  bg-blue-300 px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
           >
             <svg
               className="-ml-0.5 mr-1.5 h-5 w-5 text-gray-400"
@@ -110,7 +110,7 @@ export default function Profile() {
                 clipRule="evenodd"
               />
             </svg>
-            <span className="font-serif">Call</span>
+            <span className="font-serif">Book a free consultation</span>
           </Link>
         </div>
       </div>
