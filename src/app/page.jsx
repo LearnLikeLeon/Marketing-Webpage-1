@@ -9,6 +9,7 @@ import ServicesSliderMini from "../components/ServicesSliderMini";
 export default function Home() {
   return (
     <div>
+      {/* Navigation Bar Section */}
       <Navbar />
 
       <main className="pt-16">

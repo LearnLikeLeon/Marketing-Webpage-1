@@ -49,7 +49,7 @@ export default function Profile() {
           </span>
         </div>
         <p className="text-gray-700 font-serif font-medium  ">
-          Adjunct Professor | Researcher and Data Analyst
+          Data Analyst | Higher Ed Educator
         </p>
         <p className="text-sm text-gray-500 font-serif font-light">
           Washington DC , USA
@@ -58,11 +58,11 @@ export default function Profile() {
 
       <div className="mx-auto max-w-xs sm:max-w-lg lg:max-w-4xl xl:max-w-7xl text-justify items-center font-serif text-black text-xl pt-4">
         <p className="indent-12">
-          I’m a Research and Data Analyst with a passion for turning data into
-          actionable insights. My journey is about making a difference and is
-          driven by a desire to positively impact the world, whether through
-          Research, Teaching, Collaboration, advancing STEM education, or
-          Mentoring others to be confident & dynamic.
+          I’m a Microsoft Certified Data Analyst with a passion for turning data
+          into actionable insights. My journey is about making a difference and
+          is driven by a desire to positively impact the world using data.
+          {/* Whether through Teaching, Collaboration, advancing STEM education, or
+          Mentoring others to be confident & dynamic.*/}
         </p>
 
         <p className="indent-12">
